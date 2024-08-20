@@ -32,14 +32,14 @@ class EventsRepository(
         enabledTypes: Set<String> = getEnabledTypes(preferences, language)
     ) : this(enabledTypes, language)
 
-    val afghanistanHolidays = afghanistanHolidaysKey in enabledTypes
-    val afghanistanOthers = afghanistanOthersKey in enabledTypes
-    val iranHolidays = iranHolidaysKey in enabledTypes
-    val iranAncient = iranAncientKey in enabledTypes
-    val iranOthers = iranOthersKey in enabledTypes || /*legacy*/ "iran_islamic" in enabledTypes
-    val nepalHolidays = nepalHolidaysKey in enabledTypes
-    val nepalOthers = nepalOthersKey in enabledTypes
-    val international = internationalKey in enabledTypes
+    val afghanistanHolidays = AFGHANISTAN_HOLIDAYS_KEY in enabledTypes
+    val afghanistanOthers = AFGHANISTAN_OTHERS_KEY in enabledTypes
+    val iranHolidays = IRAN_HOLIDAYS_KEY in enabledTypes
+    val iranAncient = IRAN_ANCIENT_KEY in enabledTypes
+    val iranOthers = IRAN_OTHERS_KEY in enabledTypes || /*legacy*/ "iran_islamic" in enabledTypes
+    val nepalHolidays = NEPAL_HOLIDAYS_KEY in enabledTypes
+    val nepalOthers = NEPAL_OTHERS_KEY in enabledTypes
+    val international = INTERNATIONAL_KEY in enabledTypes
     val isEmpty get() = enabledTypes.isEmpty()
     val onlyIranHolidaysIsEnabled get() = enabledTypes.size == 1 && iranHolidays
     val onlyAfghanistanHolidaysIsEnabled get() = enabledTypes.size == 1 && afghanistanHolidays
@@ -180,17 +180,17 @@ class EventsRepository(
     }
 
     companion object {
-        const val iranHolidaysKey = "iran_holidays"
-        const val iranOthersKey = "iran_others"
-        const val afghanistanHolidaysKey = "afghanistan_holidays"
-        const val afghanistanOthersKey = "afghanistan_others"
-        const val nepalHolidaysKey = "nepal_holidays"
-        const val nepalOthersKey = "nepal_others"
-        const val iranAncientKey = "iran_ancient"
-        const val internationalKey = "international"
-        val iranDefault = setOf(iranHolidaysKey)
-        val afghanistanDefault = setOf(afghanistanHolidaysKey)
-        val nepalDefault = setOf(nepalHolidaysKey)
+        const val IRAN_HOLIDAYS_KEY = "iran_holidays"
+        const val IRAN_OTHERS_KEY = "iran_others"
+        const val AFGHANISTAN_HOLIDAYS_KEY = "afghanistan_holidays"
+        const val AFGHANISTAN_OTHERS_KEY = "afghanistan_others"
+        const val NEPAL_HOLIDAYS_KEY = "nepal_holidays"
+        const val NEPAL_OTHERS_KEY = "nepal_others"
+        const val IRAN_ANCIENT_KEY = "iran_ancient"
+        const val INTERNATIONAL_KEY = "international"
+        val iranDefault = setOf(IRAN_HOLIDAYS_KEY)
+        val afghanistanDefault = setOf(AFGHANISTAN_HOLIDAYS_KEY)
+        val nepalDefault = setOf(NEPAL_HOLIDAYS_KEY)
 
         fun getEnabledTypes(preferences: SharedPreferences, language: Language): Set<String> {
             return preferences.getStringSet(PREF_HOLIDAY_TYPES, null)

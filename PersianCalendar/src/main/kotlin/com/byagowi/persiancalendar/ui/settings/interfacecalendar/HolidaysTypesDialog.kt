@@ -80,8 +80,8 @@ fun HolidaysTypesDialog(onDismissRequest: () -> Unit) {
                         stringResource(R.string.iran_holidays),
                         stringResource(R.string.iran_others),
                         enabledTypes,
-                        EventsRepository.iranHolidaysKey,
-                        EventsRepository.iranOthersKey,
+                        EventsRepository.IRAN_HOLIDAYS_KEY,
+                        EventsRepository.IRAN_OTHERS_KEY,
                     )
                 }
 
@@ -93,8 +93,8 @@ fun HolidaysTypesDialog(onDismissRequest: () -> Unit) {
                         stringResource(R.string.afghanistan_holidays),
                         stringResource(R.string.afghanistan_others),
                         enabledTypes,
-                        EventsRepository.afghanistanHolidaysKey,
-                        EventsRepository.afghanistanOthersKey,
+                        EventsRepository.AFGHANISTAN_HOLIDAYS_KEY,
+                        EventsRepository.AFGHANISTAN_OTHERS_KEY,
                     )
                 }
 
@@ -112,8 +112,8 @@ fun HolidaysTypesDialog(onDismissRequest: () -> Unit) {
                     stringResource(R.string.holiday),
                     stringResource(R.string.other_holidays),
                     enabledTypes,
-                    EventsRepository.nepalHolidaysKey,
-                    EventsRepository.nepalOthersKey,
+                    EventsRepository.NEPAL_HOLIDAYS_KEY,
+                    EventsRepository.NEPAL_OTHERS_KEY,
                 )
             }
             Box(
@@ -128,12 +128,12 @@ fun HolidaysTypesDialog(onDismissRequest: () -> Unit) {
             if (!language.isAfghanistanExclusive) IndentedCheckBox(
                 stringResource(R.string.iran_ancient),
                 enabledTypes,
-                EventsRepository.iranAncientKey,
+                EventsRepository.IRAN_ANCIENT_KEY,
             )
             IndentedCheckBox(
                 stringResource(R.string.international),
                 enabledTypes,
-                EventsRepository.internationalKey,
+                EventsRepository.INTERNATIONAL_KEY,
             )
         }
     }

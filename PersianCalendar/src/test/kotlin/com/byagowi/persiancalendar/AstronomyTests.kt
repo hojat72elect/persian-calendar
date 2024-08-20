@@ -10,12 +10,12 @@ import com.google.common.truth.Truth.assertThat
 import io.github.cosinekitty.astronomy.seasons
 import io.github.persiancalendar.calendar.PersianDate
 import io.github.persiancalendar.praytimes.Coordinates
-import org.junit.jupiter.api.Test
-import org.mockito.kotlin.doReturn
-import org.mockito.kotlin.mock
 import java.util.GregorianCalendar
 import java.util.TimeZone
 import kotlin.test.assertEquals
+import org.junit.jupiter.api.Test
+import org.mockito.kotlin.doReturn
+import org.mockito.kotlin.mock
 
 class AstronomyTests {
 
@@ -122,23 +122,6 @@ class AstronomyTests {
             seasons.marchEquinox to 1584676196290, seasons.juneSolstice to 1592689411284,
             seasons.septemberEquinox to 1600781459379, seasons.decemberSolstice to 1608544962334
         ).map { (it, time) -> assertThat(it.toMillisecondsSince1970()).isEqualTo(time) }
-    }
-
-    @Test
-    fun `Lunar Sunlit Tilt`() {
-//        val time = GregorianCalendar(TimeZone.getTimeZone("UTC")).also {
-//            it.clear()
-//            it.set(2021, Calendar.JANUARY, 10, 4, 0, 0)
-//        }
-//        assertThat(
-//            lunarSunlitTilt(
-//                // Equatorial(19.451750, -21.930057, 0.983402),
-//                doubleArrayOf(0.338427, -0.847146, -0.367276),
-//                Horizontal(187.958846, 40.777947),
-//                time,
-//                Coordinates(27.0, 85.0, .0)
-//            )
-//        ).isWithin(1.0e-10).of(-0.9376037778203803)
     }
 
     @Test

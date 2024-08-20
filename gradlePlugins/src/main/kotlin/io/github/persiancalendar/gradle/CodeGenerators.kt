@@ -11,6 +11,8 @@ import com.squareup.kotlinpoet.asClassName
 import com.squareup.kotlinpoet.buildCodeBlock
 import com.squareup.kotlinpoet.typeNameOf
 import com.squareup.kotlinpoet.withIndent
+import java.io.File
+import javax.inject.Inject
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -23,8 +25,6 @@ import org.gradle.api.file.ProjectLayout
 import org.gradle.api.provider.Property
 import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.TaskAction
-import java.io.File
-import javax.inject.Inject
 
 abstract class CodeGenerators : DefaultTask() {
 

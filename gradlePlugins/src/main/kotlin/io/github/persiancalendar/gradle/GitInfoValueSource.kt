@@ -1,10 +1,10 @@
 package io.github.persiancalendar.gradle
 
+import java.io.ByteArrayOutputStream
+import javax.inject.Inject
 import org.gradle.api.provider.ValueSource
 import org.gradle.api.provider.ValueSourceParameters
 import org.gradle.process.ExecOperations
-import java.io.ByteArrayOutputStream
-import javax.inject.Inject
 
 abstract class GitInfoValueSource : ValueSource<String, ValueSourceParameters.None> {
     @get:Inject

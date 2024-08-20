@@ -69,8 +69,6 @@ import com.byagowi.persiancalendar.PREF_SHOW_QIBLA_IN_COMPASS
 import com.byagowi.persiancalendar.PREF_TRUE_NORTH_IN_COMPASS
 import com.byagowi.persiancalendar.R
 import com.byagowi.persiancalendar.SHARED_CONTENT_KEY_COMPASS
-import com.byagowi.persiancalendar.SHARED_CONTENT_KEY_LEVEL
-import com.byagowi.persiancalendar.SHARED_CONTENT_KEY_MAP
 import com.byagowi.persiancalendar.entities.Clock
 import com.byagowi.persiancalendar.global.cityName
 import com.byagowi.persiancalendar.global.coordinates
@@ -90,14 +88,14 @@ import com.byagowi.persiancalendar.utils.THIRTY_SECONDS_IN_MILLIS
 import com.byagowi.persiancalendar.utils.formatCoordinateISO6709
 import com.byagowi.persiancalendar.utils.preferences
 import com.byagowi.persiancalendar.variants.debugLog
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import org.jetbrains.annotations.VisibleForTesting
 import java.util.Date
 import java.util.GregorianCalendar
 import kotlin.math.abs
 import kotlin.math.roundToInt
 import kotlin.random.Random
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import org.jetbrains.annotations.VisibleForTesting
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalSharedTransitionApi::class)
 @Composable
@@ -250,24 +248,14 @@ fun SharedTransitionScope.CompassScreen(
         bottomBar = {
             BottomAppBar {
                 Spacer(Modifier.width(8.dp))
-                Box(
-//                    modifier = Modifier.sharedBounds(
-//                        rememberSharedContentState(key = SHARED_CONTENT_KEY_LEVEL),
-//                        animatedVisibilityScope = animatedContentScope,
-//                    ),
-                ) {
+                Box {
                     AppIconButton(
                         icon = ImageVector.vectorResource(R.drawable.ic_level),
                         title = stringResource(R.string.level),
                         onClick = navigateToLevel,
                     )
                 }
-                Box(
-//                    modifier = Modifier.sharedBounds(
-//                        rememberSharedContentState(key = SHARED_CONTENT_KEY_MAP),
-//                        animatedVisibilityScope = animatedContentScope,
-//                    ),
-                ) {
+                Box {
                     AppIconButton(
                         icon = Icons.Default.Map,
                         title = stringResource(R.string.map),

@@ -36,7 +36,7 @@ class EventsTest {
 
     @Test
     fun testAncientIranEventsRepository() {
-        val repository = EventsRepository(setOf(EventsRepository.iranAncientKey), Language.FA)
+        val repository = EventsRepository(setOf(EventsRepository.IRAN_ANCIENT_KEY), Language.FA)
         assertEquals(IslamicDate.useUmmAlQura, false)
 
         assertEquals(0, (1..30).map { IslamicDate(1400, 2, it) }.flatMap {
@@ -77,7 +77,7 @@ class EventsTest {
 
     @Test
     fun testInternationEventsRepository() {
-        val repository = EventsRepository(setOf(EventsRepository.internationalKey), Language.UR)
+        val repository = EventsRepository(setOf(EventsRepository.INTERNATIONAL_KEY), Language.UR)
         assertEquals(IslamicDate.useUmmAlQura, true)
         repository.irregularCalendarEventsStore
             .getEventsList<CalendarEvent.GregorianCalendarEvent>(2021, Calendar.GREGORIAN)

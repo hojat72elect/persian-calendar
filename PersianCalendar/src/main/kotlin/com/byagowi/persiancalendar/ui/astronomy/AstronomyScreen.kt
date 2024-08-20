@@ -80,7 +80,6 @@ import androidx.compose.ui.util.fastForEach
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.util.lruCache
 import com.byagowi.persiancalendar.R
-import com.byagowi.persiancalendar.SHARED_CONTENT_KEY_MAP
 import com.byagowi.persiancalendar.SHARED_CONTENT_KEY_MOON
 import com.byagowi.persiancalendar.SHARED_CONTENT_KEY_TIME_BAR
 import com.byagowi.persiancalendar.entities.Jdn
@@ -107,9 +106,9 @@ import com.byagowi.persiancalendar.utils.toGregorianCalendar
 import io.github.cosinekitty.astronomy.seasons
 import io.github.persiancalendar.calendar.CivilDate
 import io.github.persiancalendar.calendar.PersianDate
-import kotlinx.coroutines.delay
 import java.util.Date
 import kotlin.math.abs
+import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalSharedTransitionApi::class)
 @Composable
@@ -438,12 +437,11 @@ private fun SharedTransitionScope.SolarDisplay(
         NavigationRailItem(
             modifier = Modifier
                 .size(56.dp)
-                .align(Alignment.CenterEnd)
+                .align(Alignment.CenterEnd),
 //                .sharedBounds(
 //                    rememberSharedContentState(key = SHARED_CONTENT_KEY_MAP),
 //                    animatedVisibilityScope = animatedContentScope,
 //                )
-            ,
             selected = false,
             onClick = navigateToMap,
             icon = {

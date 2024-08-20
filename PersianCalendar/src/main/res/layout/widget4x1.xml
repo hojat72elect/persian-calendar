@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="start"
                 android:textAlignment="viewStart"
-                android:textSize="36dp" />
+                android:textSize="36sp" />
 
             <TextView
                 android:id="@+id/textPlaceholder3_4x1"
@@ -47,7 +47,7 @@
                 android:layout_marginStart="5dp"
                 android:gravity="start"
                 android:textAlignment="viewStart"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
 
         </LinearLayout>
 
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:textAlignment="viewStart"
-            android:textSize="14dp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 

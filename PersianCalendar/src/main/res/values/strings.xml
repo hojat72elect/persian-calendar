@@ -7,7 +7,7 @@
     <string name="widget_mini_name">Persian Calendar (mini)</string>
     <string name="widget_age_name">Persian Calendar (age)</string>
     <string name="close">Close</string>
-    <string name="open">Open</string>
+
     <string name="accept">OK</string>
     <string name="add">Add</string>
     <string name="help">Help</string>
@@ -33,7 +33,6 @@
     <string name="days_distance">Distance</string>
     <string name="start_of_year_diff">%1$s days (~%2$s weeks or %3$s months) from start of the year</string>
     <string name="end_of_year_diff">%1$s days (~%2$s weeks or %3$s months) to end of the year</string>
-    <string name="date_copied_clipboard">"%1$s" copied to clipboard.</string>
     <string name="year_name">Year name</string>
     <string name="animal_year_name_monkey">Monkey</string>
     <string name="animal_year_name_rooster">Rooster</string>
@@ -83,14 +82,14 @@
     <string name="midnight">Midnight</string>
     <string name="spring_equinox">Spring equinox time of year %1$s: %2$s</string>
     <!--Date Converter-->
-    <string name="select_type_date">Select date type</string>
+
     <string name="year">Year</string>
     <string name="select_year">Select year</string>
     <string name="month">Month</string>
     <string name="select_month">Select month</string>
     <string name="day">Day</string>
     <string name="select_day">Select day</string>
-    <string name="date_exception">"The entered day isn't valid."</string>
+
     <!--Compass-->
     <string name="compass_not_found">Compass sensor not found</string>
     <string name="calibrate_compass_summary">For improving compass sensor accuracy move the phone away from any magnetic objects, tilt and rotate the device back and forth on every axis.</string>
@@ -109,7 +108,7 @@
     <!--Interface and Calendar Settings-->
     <string name="pref_interface">Interface</string>
     <string name="language">Language</string>
-    <string name="skin">Skin</string>
+
     <string name="select_skin">Select a skin</string>
     <string name="native_digits">Native Digits</string>
     <string name="enable_native_digits">Enable Native Digits</string>
@@ -175,8 +174,6 @@ The app needs this only once, however, if you move to a new location, accessing 
     <string name="abdulbasit">Abdul-Basit Abdel-Samad</string>
     <string name="custom_notification_is_set">Custom notification is just set</string>
     <string name="default_athan">Default Athan</string>
-    <string name="default_athan_summary">Return to default Athan</string>
-    <string name="returned_to_default">Returned to default</string>
     <string name="athan_volume">Athan Volume</string>
     <string name="athan_volume_summary">Set the volume for the alarm</string>
     <string name="athan_disabled_summary">To set the Athan alarm, choose a location or enter the coordinates above</string>
@@ -186,7 +183,7 @@ The app needs this only once, however, if you move to a new location, accessing 
     <string name="calendar_access">Calendar Access</string>
     <string name="phone_calendar_required">This part of the app needs calendar permission, if you allow it your personal events will be shown on the calendar.</string>
     <!--About-->
-    <string name="gpl_logo">GPL Logo</string>
+
     <string name="version">Version %1$s</string>
     <string name="licenses">License</string>
     <string name="about_license_title">Application License</string>
@@ -228,7 +225,7 @@ The app needs this only once, however, if you move to a new location, accessing 
     <string name="am">AM</string>
     <string name="pm">PM</string>
     <string name="holiday">holiday</string>
-    <string name="shift_work_days_head">Duration</string>
+
     <string name="prefer_linear_date_summary">Use 2000/1/1 instead 1 January 2000 in widget and notification</string>
     <string name="prefer_linear_date">Prefer numerical form of dates</string>
     <string name="month_overview">"Month's events"</string>
@@ -341,8 +338,6 @@ The app needs this only once, however, if you move to a new location, accessing 
     <!--Title of a widget that shows how much of a day is passed-->
     <string name="sun_view">Sun View</string>
     <string name="asr_hanafi_juristic">Hanafi Asr Juristic Method</string>
-    <string name="enable_new_interface">Enable the new interface</string>
-    <string name="are_you_sure">Are you sure?</string>
     <string name="month_pray_times">Month\'s pray times</string>
     <string name="high_latitudes_method">High Latitudes Method</string>
     <string name="high_latitudes_night_middle">Night Middle</string>
@@ -353,7 +348,6 @@ The app needs this only once, however, if you move to a new location, accessing 
     <string name="widget_prefer_device_colors">Follow Device Coloring in Widgets</string>
     <string name="nepali_calendar">Nepali Calendar</string>
     <string name="nepali_calendar_short">Nepali</string>
-    <string name="country_emoji">🇺🇸🇬🇧</string>
     <string name="show_secondary_calendar">Show secondary calendar</string>
     <string name="season">Season</string>
     <string name="nepal">Nepal</string>
@@ -377,14 +371,12 @@ The app needs this only once, however, if you move to a new location, accessing 
     <!-- Used in astronomy screen, see https://en.wikipedia.org/wiki/Tropical_year and https://en.wikipedia.org/wiki/Sidereal_and_tropical_astrology -->
     <string name="tropical">Tropical</string>
     <string name="calculator">Calculator</string>
-    <string name="chinese_calendar">Chinese Calendar</string>
     <string name="chinese">Chinese</string>
     <string name="live_wallpaper_settings">Live wallpaper settings</string>
     <string name="screensaver_settings">Screensaver settings</string>
     <string name="enable_notification">Would you like to enable date notification?</string>
     <string name="add_quick_settings_tile">Add Quick Settings tile</string>
     <string name="true_north">True north</string>
-    <string name="lock">Lock</string>
     <string name="full_screen">Full Screen</string>
     <string name="exit_full_screen">Exit Full Screen</string>
     <string name="color_gradient">Color gradient</string>
@@ -410,10 +402,7 @@ The app needs this only once, however, if you move to a new location, accessing 
         <item quantity="one">%1$s work day</item>
         <item quantity="other">%1$s work days</item>
     </plurals>
-    <plurals name="seconds">
-        <item quantity="one">%1$s second</item>
-        <item quantity="other">%1$s seconds</item>
-    </plurals>
+
     <plurals name="minutes">
         <item quantity="one">%1$s minute</item>
         <item quantity="other">%1$s minutes</item>
